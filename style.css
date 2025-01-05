@@ -1,0 +1,165 @@
+/* Base styles */
+:root {
+  --primary-gradient: linear-gradient(
+    to right bottom,
+    #1e40af,
+    #6b21a8,
+    #831843
+  );
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  background: var(--primary-gradient);
+  min-height: 100vh;
+}
+
+/* Glass morphism components */
+.glass-panel {
+  backdrop-filter: blur(16px);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Form elements */
+.form-control {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: white;
+}
+
+/* Custom select styling */
+.custom-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,...");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+}
+.main-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+select.form-control {
+  margin-top: 5px;
+}
+
+.title {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.form-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 15px;
+}
+
+.progress {
+  height: 8px;
+  background-color: #e9ecef;
+}
+
+.progress-bar {
+  background-color: #007bff;
+}
+
+/* Landing page specific styles */
+.display-4 {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.description {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.password-field {
+  position: relative;
+}
+
+/* Navigation buttons */
+.btn-lg {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+}
+
+select option {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 8px;
+}
+
+select option:hover {
+  background-color: #333333;
+}
+
+select option {
+  background-color: #1e1b4b;
+  color: white;
+  padding: 16px;
+}
+
+select option:hover {
+  background-color: #3730a3;
+}
+
+.custom-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' height='24' viewBox='0 0 24 24' width='24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 40px !important;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
